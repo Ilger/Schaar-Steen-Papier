@@ -28,4 +28,13 @@ buttonClick(draw, () => console.log('draw button'));
 console.log(player);
 
 
+
+
+let actionFunction = () => {
+  let theTreeWeapons = ['rock','paper','scissors'];
+  computer = theTreeWeapons[Math.floor(Math.random()*theTreeWeapons.length)];
+
+  console.log(computer);
+};
+
 buttonClick(draw, actionFunction);
