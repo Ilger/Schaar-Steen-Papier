@@ -8,3 +8,6 @@ let computer;
 let player;
 
 let buttonEvent = (buttonId, executeFn) => buttonId.addEventListener('click', executeFn);
+
+
+buttonEvent(draw, () => console.log('draw button'));
