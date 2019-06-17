@@ -35,6 +35,32 @@ let actionFunction = () => {
   computer = theTreeWeapons[Math.floor(Math.random()*theTreeWeapons.length)];
 
   console.log(computer);
+
+  if (player === computer) {
+    tie();
+  }
+  else if (player === 'rock' && computer === 'scissors') {
+    win();
+  }
+  else if (player === 'rock' && computer === 'paper') {
+    lose();
+  }
+  else if (player === 'scissors' && computer === 'paper') {
+    win();
+  }
+  else if (player === 'scissors' && computer === 'rock') {
+    lose();
+  }
+  else if (player === 'paper' && computer === 'rock') {
+    win();
+  }
+  else if (player === 'paper' && computer === 'scissors') {
+    lose();
+  }
+  else {
+    winLose.innerHTML = 'Choose a Weapon';
+  }
+
 };
 
 buttonClick(draw, actionFunction);
