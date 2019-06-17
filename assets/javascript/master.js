@@ -68,3 +68,5 @@ let actionFunction = () => {
 };
 
 buttonClick(draw, actionFunction);
+
+buttonClick(reset, () => {window.location.reload(true)});
