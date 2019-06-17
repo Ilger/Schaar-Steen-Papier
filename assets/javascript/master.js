@@ -24,13 +24,17 @@ let buttonClick = (buttonId, executeFn) => buttonId.addEventListener('click', ex
 // test buttonEvent fn
 buttonClick(draw, () => console.log('draw button'));
 
-// test button player choice
-console.log(player);
+buttonClick(rock , () => player = 'rock');
+buttonClick(paper , () => player = 'paper');
+buttonClick(scissors , () => player = 'scissors');
+
 
 
 
 
 let actionFunction = () => {
+  // test button player choice
+  console.log(player);
   let theTreeWeapons = ['rock','paper','scissors'];
   computer = theTreeWeapons[Math.floor(Math.random()*theTreeWeapons.length)];
 
