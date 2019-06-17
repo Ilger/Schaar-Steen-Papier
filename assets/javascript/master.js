@@ -5,3 +5,5 @@ let scissors = document.getElementById('Scissors');
 let draw = document.getElementById('Draw');
 let reset = document.getElementById('Reset');
 let computer;
+
+let buttonEvent = (buttonId, executeFn) => buttonId.addEventListener('click', executeFn);
