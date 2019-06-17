@@ -14,7 +14,7 @@ let computer;
 let player;
 
 let win = () => winLose.innerHTML = 'A Win';
-let lose =() => winLose.innerHTML = 'A Loss';
+let lose = () => winLose.innerHTML = 'A Loss';
 let tie = () => winLose.innerHTML = 'A Tie';
 
 
