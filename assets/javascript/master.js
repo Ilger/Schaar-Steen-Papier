@@ -3,7 +3,7 @@
 
 
 // Global variables
-let winLose = document.getElementById('Win-Lose');
+let winLose = document.getElementById('WinLose');
 let rock = document.getElementById('Rock');
 let paper = document.getElementById('Paper');
 let scissors = document.getElementById('Scissors');
