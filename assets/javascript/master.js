@@ -19,7 +19,13 @@ let tie = () => winLose.innerHTML = 'A Tie';
 
 
 //addEventListener function
-let buttonEvent = (buttonId, executeFn) => buttonId.addEventListener('click', executeFn);
+let buttonClick = (buttonId, executeFn) => buttonId.addEventListener('click', executeFn);
 
 // test buttonEvent fn
-buttonEvent(draw, () => console.log('draw button'));
+buttonClick(draw, () => console.log('draw button'));
+
+// test button player choice
+console.log(player);
+
+
+buttonClick(draw, actionFunction);
