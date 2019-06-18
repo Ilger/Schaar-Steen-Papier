@@ -15,9 +15,6 @@ let player;
 
 let selectRandom = (array) => array[Math.floor(Math.random()* array.length)];
 
-let redText = winLose.style.color = 'red';
-let blueText = winLose.style.color = 'blue';
-let greenText = winLose.style.color = 'greenText';
 
 let winMessage = [" You win!", " You crushed the foo"];
 let tieMessage = [" It's a tie, reset and start again", " Tie break. please reset", " Reset the fight, one cannot win from the same element"];
@@ -26,15 +23,15 @@ let loseMessage = [" Auwtch, You loose", " The enemy has defeated you", " Aha, y
 
 let win = () => {
   winLose.innerHTML = selectRandom(winMessage);
-  greenText;
+  winLose.style.color = 'greenText'
 };
 let lose = () => {
   winLose.innerHTML = selectRandom(loseMessage);
-  redText;
+  winLose.style.color = 'red';
 };
 let tie = () => {
   winLose.innerHTML = selectRandom(tieMessage);
-  blueText;
+  winLose.style.color = 'blue';
 };
 
 
