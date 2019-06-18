@@ -13,9 +13,6 @@ let reset = document.getElementById('Reset');
 let computer;
 let player;
 
-let win = () => winLose.innerHTML = 'A Win';
-let lose = () => winLose.innerHTML = 'A Loss';
-let tie = () => winLose.innerHTML = 'A Tie';
 let selectRandom = (array) => array[Math.floor(Math.random()* array.length)];
 
 let redText = winLose.style.color = 'red';
@@ -26,6 +23,19 @@ let winMessage = [" You win!", " You crushed the foo"];
 let tieMessage = [" It's a tie, reset and start again", " Tie break. please reset", " Reset the fight, one cannot win from the same element"];
 let loseMessage = [" Auwtch, You loose", " The enemy has defeated you", " Aha, you shredded the opponent! ", " The enemy has cut you in pieces, fight again!"];
 
+
+let win = () => {
+  winLose.innerHTML = selectRandom(winMessage);
+  greenText;
+};
+let lose = () => {
+  winLose.innerHTML = selectRandom(loseMessage);
+  redText;
+};
+let tie = () => {
+  winLose.innerHTML = selectRandom(tieMessage);
+  blueText;
+};
 
 
 //addEventListener function
