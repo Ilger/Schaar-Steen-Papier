@@ -16,6 +16,8 @@ let player;
 let win = () => winLose.innerHTML = 'A Win';
 let lose = () => winLose.innerHTML = 'A Loss';
 let tie = () => winLose.innerHTML = 'A Tie';
+let selectRandom = (array) => array[Math.floor(Math.random()* array.length)];
+
 
 
 //addEventListener function
@@ -36,7 +38,7 @@ let actionFunction = () => {
   // test button player choice
   console.log(player);
   let theTreeWeapons = ['rock','paper','scissors'];
-  computer = theTreeWeapons[Math.floor(Math.random()*theTreeWeapons.length)];
+  computer = selectRandom(theTreeWeapons)
 
   console.log(computer);
 
