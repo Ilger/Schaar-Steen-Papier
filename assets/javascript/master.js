@@ -3,7 +3,7 @@
 
 
 // Global variables
-let winLose = document.getElementById('WinLose');
+let showdownResult = document.getElementById('showdownResult');
 let rock = document.getElementById('Rock');
 let paper = document.getElementById('Paper');
 let scissors = document.getElementById('Scissors');
@@ -22,16 +22,16 @@ let loseMessage = [" Auwtch, You loose", " The enemy has defeated you", " Aha, y
 
 
 let win = () => {
-  winLose.innerHTML = selectRandom(winMessage);
-  winLose.style.color = 'greenText'
+  showdownResult.innerHTML = selectRandom(winMessage);
+  showdownResult.style.color = 'greenText'
 };
 let lose = () => {
-  winLose.innerHTML = selectRandom(loseMessage);
-  winLose.style.color = 'red';
+  showdownResult.innerHTML = selectRandom(loseMessage);
+  showdownResult.style.color = 'red';
 };
 let tie = () => {
-  winLose.innerHTML = selectRandom(tieMessage);
-  winLose.style.color = 'blue';
+  showdownResult.innerHTML = selectRandom(tieMessage);
+  showdownResult.style.color = 'blue';
 };
 
 
@@ -79,7 +79,7 @@ let actionFunction = () => {
     lose();
   }
   else {
-    winLose.innerHTML = 'Choose a Weapon';
+    showdownResult.innerHTML = 'Choose a Weapon';
   }
 };
 
