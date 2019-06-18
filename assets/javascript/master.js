@@ -18,6 +18,10 @@ let lose = () => winLose.innerHTML = 'A Loss';
 let tie = () => winLose.innerHTML = 'A Tie';
 let selectRandom = (array) => array[Math.floor(Math.random()* array.length)];
 
+let redText = winLose.style.color = 'red';
+let blueText = winLose.style.color = 'blue';
+let greenText = winLose.style.color = 'greenText';
+
 
 
 //addEventListener function
