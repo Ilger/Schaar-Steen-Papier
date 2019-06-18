@@ -64,7 +64,6 @@ let actionFunction = () => {
   else {
     winLose.innerHTML = 'Choose a Weapon';
   }
-
 };
 
 buttonClick(draw, actionFunction);
