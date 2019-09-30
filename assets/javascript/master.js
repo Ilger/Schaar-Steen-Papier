@@ -3,7 +3,7 @@
 
 
 // Global variables
-let showdownResult = document.getElementById('showdownResult');
+let showdownResult = document.getElementById('win-lose');
 let rock = document.getElementById('Rock');
 let paper = document.getElementById('Paper');
 let scissors = document.getElementById('Scissors');
@@ -85,4 +85,4 @@ let actionFunction = () => {
 
 buttonClick(draw, actionFunction);
 
-buttonClick(reset, () => {window.location.reload(true)});
+buttonClick(reset, () => {window.location});
