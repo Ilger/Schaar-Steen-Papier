@@ -85,4 +85,4 @@ let actionFunction = () => {
 
 buttonClick(draw, actionFunction);
 
-buttonClick(reset, () => {window.location});
+// buttonClick(reset, () => {window.location});
