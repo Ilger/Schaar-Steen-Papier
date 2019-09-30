@@ -8,7 +8,7 @@ let rock = document.getElementById('Rock');
 let paper = document.getElementById('Paper');
 let scissors = document.getElementById('Scissors');
 let draw = document.getElementById('Draw');
-let reset = document.getElementById('Reset');
+let reset = document.getElementById('reset');
 
 let computer;
 let player;
@@ -22,15 +22,15 @@ let loseMessage = [" Auwtch, You loose", " The enemy has defeated you", " Aha, y
 
 
 let win = () => {
-  showdownResult.innerHTML = selectRandom(winMessage);
-  showdownResult.style.color = 'greenText'
+  showdownResult.innerHTML = selectRandom(winMessage) + " 🎉";
+  showdownResult.style.color = 'green'
 };
 let lose = () => {
-  showdownResult.innerHTML = selectRandom(loseMessage);
+  showdownResult.innerHTML = selectRandom(loseMessage) + " ☠️";
   showdownResult.style.color = 'red';
 };
 let tie = () => {
-  showdownResult.innerHTML = selectRandom(tieMessage);
+  showdownResult.innerHTML = selectRandom(tieMessage) + " ☮️";
   showdownResult.style.color = 'blue';
 };
 
@@ -79,10 +79,16 @@ let actionFunction = () => {
     lose();
   }
   else {
-    showdownResult.innerHTML = 'Choose a Weapon';
+    showdownResult.innerHTML = '🔘 Choose a Weapon';
+    showdownResult.style.color = 'red';
   }
+
+  player = null;
 };
 
 buttonClick(draw, actionFunction);
 
-// buttonClick(reset, () => {window.location});
+buttonClick(reset, () => {
+  player = null;
+  showdownResult.innerHTML = "";
+});
